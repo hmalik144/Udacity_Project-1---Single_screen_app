@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:src="@android:color/background_light"
+    tools:context="com.example.h_mal.udacityproject_hmal.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/water"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:id="@+id/header"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="H's Tours"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/desert"
+        android:scaleType="centerCrop"
+        android:id="@+id/Iran"
+        android:layout_below="@+id/littleheader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/IranText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/littleheader"
+        android:layout_toRightOf="@id/Iran"
+        android:text="Iran"/>
+    <TextView
+        android:id="@+id/IranLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/IranText"
+        android:layout_toRightOf="@id/Iran"
+        android:text="Dasht-e Kavir"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/croatia"
+        android:scaleType="centerCrop"
+        android:id="@+id/Croatia"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Iran"
+        android:layout_alignLeft="@+id/Iran"
+        android:layout_alignStart="@+id/Iran" />
+    <TextView
+        android:id="@+id/CroatiaHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Croatia"
+        android:layout_alignTop="@+id/Croatia"
+        android:layout_alignLeft="@+id/IranLocation"
+        android:layout_alignStart="@+id/IranLocation" />
+    <TextView
+        android:id="@+id/IranAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Dasht-e Kavir, Tabas, South Khorasan Province, Iran"
+        android:layout_below="@+id/IranLocation"
+        android:layout_alignLeft="@+id/IranLocation"
+        android:layout_alignStart="@+id/IranLocation" />
+    <TextView
+        android:id="@+id/CroatiaLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:layout_below="@id/CroatiaHeader"
+        android:layout_toRightOf="@id/Croatia"
+        android:text="Mljet National park" />
+    <TextView
+        android:id="@+id/CroatiaAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20226, Pomena, Croatia"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/CroatiaLocation"
+        android:layout_alignLeft="@+id/IranLocation"
+        android:layout_alignStart="@+id/IranLocation" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/samaria"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/Croatia"
+        android:layout_alignLeft="@+id/Croatia"
+        android:layout_alignStart="@+id/Croatia"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Greece" />
+    <TextView
+        android:id="@+id/GreeceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Greece"
+        android:layout_alignTop="@+id/Greece"
+        android:layout_alignRight="@+id/CroatiaHeader"
+        android:layout_alignEnd="@+id/CroatiaHeader" />
+    <TextView
+        android:id="@+id/GreeceLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:text="Samaria gorge"
+        android:layout_below="@+id/GreeceHeader"
+        android:layout_toRightOf="@id/Greece"
+        android:layout_alignLeft="@+id/CroatiaLocation"
+        android:layout_alignStart="@+id/CroatiaLocation" />
+    <TextView
+        android:id="@+id/GreeceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samaria Gorge, Sfakia 730 11, Greece"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/GreeceLocation"
+        android:layout_alignLeft="@+id/IranLocation"
+        android:layout_alignStart="@+id/IranLocation" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: htour@somethingmail.co.uk"
+        android:layout_below="@+id/Greece"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/Greece"
+        android:layout_alignStart="@+id/Greece"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/littleheader"
+        android:text="Highly recommend locations:"
+        android:layout_below="@+id/header"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+</RelativeLayout>
